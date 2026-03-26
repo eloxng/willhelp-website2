@@ -1,0 +1,95 @@
+/* Add custom styling that may be used in more than one window here */
+
+/* Navbar on the top of the page and sticky
+   so that it follows the user when the user
+   scrolls down the page. */
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+/* All buttons and clickable links, when hovered over, 
+   will turn text white and will see a blue shadow behind
+   the button. */
+.link-hover {
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+
+    /* Smooth all visual changes */
+    transition: 
+        background-color 0.35s ease, 
+        color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease; 
+}
+.link-hover:hover {
+    background-color: #3ab5d4;  /* blue highlight on hover */
+    color: #ffffff;                /* text turns white */
+    transform: translateY(-2px);                 /* subtle lift effect */
+}
+
+/* Custom card with large shadow,
+   card lifts slightly on hover. */
+.card-shadow-lg {
+    background-color: #fff;                                 /* white card background */
+    border-radius: 10px;                                      /* rounded corners */
+    padding: 1rem;                                            /* inner spacing */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);             /* large shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;    /* smooth hover effect */
+}
+.card-shadow-lg:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Form field styling */
+.form-fields {
+    padding: 0.5rem 1rem;               /* px-4 py-2 */
+    border: 1px solid #d1d5db;        /* Tailwind's border-gray-300 */
+    border-radius: 0.5rem;              /* rounded */
+    width: 100%;                        /* w-full */
+    outline: none;                      /* focus:outline-none */
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.form-fields:focus {
+    border-color: #3ab5d4;                         /* focus:ring-blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); /* Tailwind ring effect */
+}
+
+/* Buttons */
+.custom-button {
+    padding: 0.5rem 1rem;                        /* nice button padding */
+    border-radius: 5px;                          /* rounded corners */
+    border: 1px solid transparent;               /* optional border */
+    background-color: #3ab5d4;                 /* default button color */
+    color: #ffffff;                            /* default text color */
+    cursor: pointer;
+    font-weight: bold;                          /* make button text stand out */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+    background-color: #3ab5d4;                 /* blue highlight */
+    color: #fff;                               /* white text */
+    transform: translateY(-2px);                 /* subtle lift effect */
+}
+
+/* Website color schemes */
+.website-background-color {
+    background-color: #f1f1f1;
+}
+
+.website-header-text {
+    color: #f27420;
+    font-weight: 800;
+}
+
+.website-description-text {
+    color: #3ab5d4;
+    font-weight: 700; 
+}

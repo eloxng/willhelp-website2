@@ -1,0 +1,113 @@
+/* Global font + base text */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background-color: #f2f5ed;
+    font-weight: 600; /* fuller base text */
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #1f1b2e;
+    color: #ffffff;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    box-shadow: var(--tw-shadow);
+}
+
+/* Links hover */
+.link-hover {
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 
+        background-color 0.35s ease, 
+        color 0.35s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease; 
+}
+.link-hover:hover {
+    background-color: #5a2d82;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(90, 45, 130, 0.5);
+}
+
+/* Cards */
+.card-shadow-lg {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 8px 18px rgba(31, 27, 46, 0.25);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card-shadow-lg:hover {
+    box-shadow: 0 14px 28px rgba(90, 45, 130, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Form fields */
+.form-fields {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* fuller, stronger text */
+    padding: 0.5rem 1rem;
+    border: 1px solid #c4c4c4;
+    border-radius: 0.5rem;
+    width: 100%;
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.form-fields:focus {
+    border-color: #5a2d82;
+    box-shadow: 0 0 0 2px rgba(90, 45, 130, 0.25);
+}
+
+/* Buttons */
+.custom-button {
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #5a2d82;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700; /* stronger buttons */
+    letter-spacing: 0.3px;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.custom-button:hover {
+    background-color: #6f3fa5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(90, 45, 130, 0.35);
+}
+
+/* Website background */
+.website-background-color {
+    background-color: #f2f5ed;
+}
+
+/* Header text */
+.website-header-text {
+    color: #5a2d82;
+    font-weight: 800; /* strong headers */
+    letter-spacing: 0.5px;
+}
+
+/* Description text */
+.website-description-text {
+    color: #1f7a3a;
+    font-weight: 600; /* fuller text for descriptions */
+}
+
+/* Typography polish */
+h1, h2, h3 {
+    letter-spacing: 0.5px;
+    font-weight: 800; /* keep headers solid */
+}
+
+p {
+    line-height: 1.7;
+    font-weight: 600; /* fuller paragraph text */
+}
